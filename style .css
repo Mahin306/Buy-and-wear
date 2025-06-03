@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ffffff, #e0f7fa);
+  color: #333;
+}
+
+header {
+  background-color: #00796b;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.slider {
+  margin-top: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#slogan {
+  display: inline-block;
+  padding: 10px;
+  font-size: 24px;
+  animation: slide-left 8s linear infinite;
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+}
+
+.product {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 15px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.buy-btn {
+  display: inline-block;
+  background: #00796b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.buy-btn:hover {
+  background: #004d40;
+}
+
+footer {
+  text-align: center;
+  background: #004d40;
+  color: white;
+  padding: 15px 0;
+  margin-top: 30px;
+}
